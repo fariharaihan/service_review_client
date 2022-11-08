@@ -1,0 +1,83 @@
+[
+    {
+        "_id": "1234",
+        "service_id": "01",
+        "title": "Vanilla pestry",
+        "img": "https://sugarandsparrow.s3.us-west-2.amazonaws.com/flour/wp-content/uploads/2021/03/18214651/Vegan-Vanilla-cake-recipe-header-final.jpg",
+        "rating": 4.5,
+        "price": "10.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. Vanilla extract – the best you can afford. Imitation will work just fine, but the flavour isn't as pure or real. I use Queen Vanilla Extract. Don't waste your money on vanilla beans or vanilla bean paste – it's not worth it for cakes"
+    },
+    {
+        "_id": "1244",
+        "service_id": "02",
+        "title": "Chocolate cake",
+        "img": "https://img.freepik.com/premium-photo/cake-with-white-cream-chocolate-drips-pomegranate-nuts-chocolate-decor_199620-5923.jpg?size=626&ext=jpg&ga=GA1.2.1952607280.1664416482&semt=sph",
+        "rating": 5.5,
+        "price": "14.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. Chocolate cake, in particular, is a favourite pick by many people. The main ingredient of the chocolate in this cake is coco which helps our brain release endorphins or the “feel good” chemical. This is why whenever we eat this cake, our moods lighten and we feel a lot better."
+    },
+    {
+        "_id": "1254",
+        "service_id": "03",
+        "title": "Black forest cake",
+        "img": "https://img.freepik.com/free-photo/bakery-cherry-celebration-ice-tasty_1203-6391.jpg?size=626&ext=jpg&ga=GA1.2.1952607280.1664416482&semt=sph",
+        "rating": 4.8,
+        "price": "20.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. This deliciously moist Black Forest Cake is a cut above the rest with homemade whipped cream, rich chocolate ganache, and sweet spiked cherries.  Black Forest cake  is a chocolate sponge cake with a rich cherry filling based on the German dessert"
+    },
+    {
+        "_id": "1264",
+        "service_id": "04",
+        "title": "Red velvet cake",
+        "img": "https://img.freepik.com/premium-photo/sliced-birthday-cake-wooden-cake-stand-red-velvet-cake-decorated-with-mint-leaves-blueberries-green-background-copy-space-food-photography-recipe_252591-3772.jpg?w=360",
+        "rating": 4.5,
+        "price": "25.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. red velvet cake is a vanilla cake with a few tablespoons of cocoa powder and red food coloring mixed in. Vinegar and buttermilk bring some acid to the batter, adding a bit of tanginess that balances out the sweet cream cheese-butter frosting that is standard."
+    },
+    {
+        "_id": "1274",
+        "service_id": "05",
+        "title": "Wedding cake",
+        "img": "https://img.freepik.com/free-photo/rich-tired-wedding-cake-decorated-with-newlyweds-initials_8353-543.jpg?w=360&t=st=1667915256~exp=1667915856~hmac=359be7fa2a955841b61659b59d2dcfbdf1c63801d012154442416df83d0fc8aa",
+        "rating": 4.7,
+        "price": "15.00",
+        "description": "this cake is looking beautifull and gorgeous. It is also tasty.The wedding cake symbolizes prosperity, good luck and fertility and is made of the best ingredients available so that the marriage will be long lasting, happy and with many offspring."
+    },
+    {
+        "_id": "1284",
+        "service_id": "06",
+        "title": "Lemon/Orange cake",
+        "img": "https://www.alsothecrumbsplease.com/wp-content/uploads/2019/02/Lemon-Blueberry-Cake-42-1.jpg",
+        "rating": 4.7,
+        "price": "15.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. Besides the flavor and texture, this cake is loved is because of its ease. Very basic ingredients including a base of creamed butter + sugar, eggs, lemon, milk, and flour. We left out the brown sugar and replaced with more granulated sugar"
+    },
+    {
+        "_id": "1294",
+        "service_id": "07",
+        "title": "Strawberry cake",
+        "img": "https://img.freepik.com/premium-photo/strawberry-cake-wood_109285-3119.jpg?w=360",
+        "rating": 4.4,
+        "price": "15.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. Strawberry cake is a cake that uses strawberry as a primary ingredient. Strawberries may be used in the cake batter, atop the cake, and in the frosting. You can taste the fresh strawberry flavor in the baked cake, but the flavor is REALLY brought out when you combine it with strawberry frosting"
+    },
+    {
+        "_id": "1304",
+        "service_id": "08",
+        "title": "Chocolate moca cake",
+        "img": "https://img.freepik.com/free-photo/vertical-closeup-shot-delicious-donut-choco-birthday-cake-with-donuts-top-white-drip_181624-43083.jpg?w=360&t=st=1667914371~exp=1667914971~hmac=ea0a4c8320c27afa0c4bc9581515c30b549f9107b46552ab18eddb1bb35ff9cd",
+        "rating": 4.7,
+        "price": "20.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. This Chocolate Mocha Cake is extra rich and chocolatey with a silky mocha swiss meringue buttercream, and dreamy chocolate ganache."
+    },
+    {
+        "_id": "1314",
+        "service_id": "09",
+        "title": "Blueberry cake",
+        "img": "https://img.freepik.com/free-photo/birthday-cake-decorated-with-blueberry-cookies_8353-8230.jpg?w=360&t=st=1667919730~exp=1667920330~hmac=924eb4d2dc83e5f70133c47f350222c02ac2a7afdf791d42ff8f7544b65f03f8",
+        "rating": 4.8,
+        "price": "20.00",
+        "description": "This cake is so tasty and yummy. It also look delicious. It's a soft tender cake that tastes of wild blueberries, filled with a blueberry compote and wrapped in a sweet, blueberry buttercream."
+    }
+]
