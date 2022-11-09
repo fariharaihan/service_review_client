@@ -5,7 +5,7 @@ import bakingImg2 from '../../assets/about-us/img-3.webp'
 const About = () => {
     return (
         <div className="hero my-24">
-            <div className="hero-content flex-col lg:flex-row ">
+            <div className="hero-content flex-col md:flex-row lg:flex-row ">
                 <div className='relative w-1/2'>
                     <img src={bakingImg2} alt="" className="w-4/5 h-full rounded-lg shadow-2xl" />
                     <img src={bakingImg} alt="" className="absolute w-3/5 right-5 top-1/2 border-5 rounded-lg shadow-2xl" />
