@@ -20,8 +20,26 @@ const CheckOutReview = () => {
             productName: title,
             customer: name,
             email,
+            rating,
             message
         }
+
+        fetch('http://localhost:5000/reviews', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.acknowledged) {
+                    alert('Successfully done')
+                    form.reset()
+                }
+            })
+            .catch(err => console.error(err))
     }
 
     return (
@@ -50,7 +68,7 @@ const CheckOutReview = () => {
                         <input name='name' type="text" placeholder="Name" className="input input-bordered mb-4 " />
                         <input name='email' type="text" placeholder="email" defaultValue={user?.email} className="input input-bordered mb-4" readOnly />
                         <input name='rating' type="text" placeholder="rating" className="input input-bordered mb-4" />
-                        <textarea name='message' className="textarea textarea-primary" placeholder="Write your review"></textarea>
+                        <textarea name='message' className="textarea textarea-primary" placeholder="Write your review" required></textarea>
                         <div className="card-actions justify-end mt-5">
                             <button className='btn'>Place your review</button>
                         </div>

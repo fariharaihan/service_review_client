@@ -3,6 +3,7 @@ import Blog from "../../Pages/Blog/Blog";
 import CheckOutReview from "../../Pages/CheckOutReview/CheckOutReview";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
+import Reviews from "../../Pages/Reviews/Reviews";
 import ServicesDetail from "../../Pages/ServicesDetail/ServicesDetail/ServicesDetail";
 import SignUp from "../../Pages/Signup/SignUp";
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/reviews',
+                element: <Reviews></Reviews>
             }
         ]
     },
