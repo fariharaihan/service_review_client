@@ -1,5 +1,6 @@
 import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
+import CheckOutReview from "../../Pages/CheckOutReview/CheckOutReview";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import ServicesDetail from "../../Pages/ServicesDetail/ServicesDetail/ServicesDetail";
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/checkoutreview/:id',
+                element: <CheckOutReview></CheckOutReview>,
+                loader: ({ params }) => fetch(`http://localhost:5000/cakeDetails/${params.id}`)
             },
             {
                 path: '/blog',
