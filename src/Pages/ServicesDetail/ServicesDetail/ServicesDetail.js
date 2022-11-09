@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../../Shared/ServiceCard/ServiceCard';
+import AllReview from './AllReview';
 import ServicesDetailCard from './ServicesDetailCard';
 
 const ServicesDetail = () => {
@@ -17,7 +18,7 @@ const ServicesDetail = () => {
                 <p className='text-2xl font-bold text-purple-700 '>Our Services</p>
                 <h2 className='text-4xl font-sembold '>Our Cake and baking Items</h2>
             </div>
-            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-3'>
                 {
                     services.map(service => <ServiceCard
                         key={service._id}
@@ -27,7 +28,9 @@ const ServicesDetail = () => {
             </div>
             <div className="card-actions justify-center mt-5">
 
-                <button className='btn'><Link to='/checkoutreview'>Write your valuable review here</Link></button>
+            </div>
+            <div>
+                <AllReview></AllReview>
             </div>
         </div>
     );

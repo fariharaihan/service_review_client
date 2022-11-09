@@ -7,6 +7,7 @@ import Login from "../../Pages/Login/Login";
 import Reviews from "../../Pages/Reviews/Reviews";
 import ServicesDetail from "../../Pages/ServicesDetail/ServicesDetail/ServicesDetail";
 import SignUp from "../../Pages/Signup/SignUp";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/checkoutreview/:id',
-                element: <CheckOutReview></CheckOutReview>,
+                element: <PrivateRoute><CheckOutReview></CheckOutReview></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/cakeDetails/${params.id}`)
             },
             {
@@ -43,11 +44,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/reviews',
-                element: <Reviews></Reviews>
+                element: <PrivateRoute><Reviews></Reviews></PrivateRoute>
             },
             {
                 path: '/addservices',
-                element: <AddServices></AddServices>
+                element: <PrivateRoute><AddServices></AddServices></PrivateRoute>
             }
         ]
     },

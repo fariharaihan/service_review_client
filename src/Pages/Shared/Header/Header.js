@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 
 const Header = () => {
-    const { user } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogout = () => {
+        logOut()
+            .then()
+            .then()
+    }
 
     const menuItems = <>
         <li className='font-semibold'> <Link to='/'>Home</Link></li>
@@ -14,6 +20,8 @@ const Header = () => {
                 <>
                     <li className='font-semibold'> <Link to='/reviews'>My review</Link></li>
                     <li className='font-semibold'> <Link to='/addservices'>Add Services</Link></li>
+                    <li className='font-semibold'>
+                        <button onClick={handleLogout} className='btn btn-ghost'>Log Out</button></li>
                 </>
                 :
                 <li className='font-semibold'> <Link to='/login'>Login</Link></li>
@@ -31,7 +39,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <img className='w-10 h-10' src='https://img.freepik.com/premium-vector/cute-memo-page-template-girl-vector_493693-129.jpg?w=826' alt='' />
+                <img className='w-10 h-10' src='https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?size=626&ext=jpg&ga=GA1.2.1952607280.1664416482&semt=sph' alt='' />
                 <Link to="/" className="btn btn-ghost normal-case  text-xl">Candle cake</Link>
 
             </div>
@@ -40,8 +48,16 @@ const Header = () => {
                     {menuItems}
                 </ul>
             </div>
+
             <div className="navbar-end">
-                <a className="btn">Get started</a>
+                <p className='px-2'> {user?.displayName}</p>
+                {user?.photoURL
+                    ?
+                    <img className='w-16 rounded-full  dark:bg-gray-500'
+                        src={user?.photoURL
+                        }></img>
+                    : <></>
+                }
             </div>
         </div>
     );

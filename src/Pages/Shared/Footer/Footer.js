@@ -2,10 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer p-16 bg-neutral text-neutral-content ">
+        <footer className="footer p-10 bg-neutral text-neutral-content ">
             <div>
-                <img className='w-10 h-10' src='https://img.freepik.com/premium-vector/cute-memo-page-template-girl-vector_493693-129.jpg?w=826' alt='' />
-                <p>Candle Cake<br />Providing reliable tech since 2020</p>
+                <img className='w-24 h-24' src='https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?size=626&ext=jpg&ga=GA1.2.1952607280.1664416482&semt=sph' alt='' />
+                <p className='text-2xl font-semibold'>Candle Cake</p>
+                <p>By Fariha Mahjabin</p>
+                <p>Providing reliable tech since 2020</p>
                 <p>Copyright © 2022 - All right reserved</p>
             </div>
             <div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ReviewRow = ({ review, handleDelete }) => {
+const ReviewRow = ({ review, handleDelete, handleUpdate }) => {
     const { _id, productName, email, customer, rating,
         message, service, status } = review;
     const [reviewService, setReviewService] = useState({})
@@ -53,8 +53,8 @@ const ReviewRow = ({ review, handleDelete }) => {
                         {/* <p className="py-4">{message}</p> */}
                         <input type="text" placeholder="Edit your review" className="input input-bordered mb-4 w-full" />
                         <div className="modal-action">
-                            <button>
-                                <label htmlFor="my-modal" className="btn">{status ? status : "Update"}</label>
+                            <button onClick={() => handleUpdate(_id)} >
+                                <label htmlFor="my-modal" className='btn'>{status ? status : "Update"}</label>
                             </button>
                         </div>
                     </div>
