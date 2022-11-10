@@ -1,6 +1,7 @@
 import React from 'react';
 
 const CakeAbout = () => {
+
     return (
         <div className="hero border rounded-xl shadow-lg mt-10">
             <div className="hero-content flex-col lg:flex-row-reverse mx-8">

@@ -20,7 +20,7 @@ const AddServices = () => {
             rating,
             description,
             price
-        }
+        };
 
         fetch('https://b6a11-service-review-server-side-phi.vercel.app/services', {
             method: 'POST',

@@ -11,6 +11,7 @@ const ServicesDetail = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     })
+
     return (
         <div className='my-20'>
             <div className='text-center my-10'>
@@ -25,7 +26,6 @@ const ServicesDetail = () => {
                     ></ServiceCard>)
                 }
             </div>
-
             <div>
                 <AllReview></AllReview>
             </div>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ReviewRow = ({ review, handleDelete, handleUpdate }) => {
     const { _id, productName, email, customer, rating,
         message, service, status } = review;
-    const [reviewService, setReviewService] = useState({})
+    const [reviewService, setReviewService] = useState({});
 
     useEffect(() => {
         fetch(`https://b6a11-service-review-server-side-phi.vercel.app/cakeDetails/${service}`)
@@ -38,10 +38,6 @@ const ReviewRow = ({ review, handleDelete, handleUpdate }) => {
             <th>
                 <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>X</button>
             </th>
-
-            {/* <th>
-                <button className="btn btn-ghost btn-xs">{status ? status : "Edit"}</button>
-            </th> */}
             <th>
                 <button>
                     <label htmlFor="my-modal" className="btn">Edit</label>

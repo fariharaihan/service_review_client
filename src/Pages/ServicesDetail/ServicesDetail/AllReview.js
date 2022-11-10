@@ -9,6 +9,7 @@ const AllReview = () => {
             .then(res => res.json())
             .then(data => setAllReview(data))
     })
+
     return (
         <div>
             <div className='text-center my-10'>

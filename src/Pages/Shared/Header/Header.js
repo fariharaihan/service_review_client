@@ -4,7 +4,7 @@ import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 import { FaUserCircle } from "react-icons/fa";
 
 const Header = () => {
-    const { user, logOut } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext);
 
     const handleLogout = () => {
         logOut()

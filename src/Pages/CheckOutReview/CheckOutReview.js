@@ -5,8 +5,8 @@ import { FaUserCircle } from "react-icons/fa";
 
 
 const CheckOutReview = () => {
-    const { _id, title, img, price, description, rating } = useLoaderData()
-    const { user } = useContext(AuthContext)
+    const { _id, title, img, price, description, rating } = useLoaderData();
+    const { user } = useContext(AuthContext);
 
     const handlePlaceReview = event => {
         event.preventDefault();

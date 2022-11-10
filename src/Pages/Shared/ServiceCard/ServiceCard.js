@@ -22,7 +22,6 @@ const ServiceCard = ({ service }) => {
                     <Link to={`/checkoutreview/${_id}`}>
                         <button className='btn'>View Detail</button>
                     </Link>
-
                 </div>
             </div>
         </div>

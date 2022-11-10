@@ -22,7 +22,6 @@ const AllReviewCard = ({ review }) => {
                     <h3 className=" text-2xl ">Name: {customer}</h3>
                     <p >Review: {message}</p>
                     <p className='text-xl font' >Rating: <span className='text-purple-700'>{rating}</span></p>
-
                 </div>
             </div>
         </div>

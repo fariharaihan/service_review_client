@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa";
 
 
 const Login = () => {
-    const { providerLogin, login } = useContext(AuthContext)
+    const { providerLogin, login } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -28,7 +28,7 @@ const Login = () => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
-        const password = form.password.value
+        const password = form.password.value;
 
         login(email, password)
             .then(result => {
@@ -68,14 +68,7 @@ const Login = () => {
                             <input className="btn btn-primary" type="submit" value="Login" />
 
                             <button onClick={handleGoogleSignIn} className="btn btn-primary mt-5">Log in with google <FaGoogle className='mx-5'></FaGoogle></button>
-
-
-
-
-
                         </div>
-
-
                     </form>
                     <p className='text-center'>New to candle cake: <Link className='text-purple-700 text-bold' to='/signup'>Sign Up</Link></p>
                 </div>

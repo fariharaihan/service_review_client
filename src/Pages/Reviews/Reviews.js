@@ -69,10 +69,7 @@ const Reviews = () => {
                                 handleUpdate={handleUpdate}
                             ></ReviewRow>)
                         }
-
-
                     </tbody>
-
                 </table>
             </div>
         </div>

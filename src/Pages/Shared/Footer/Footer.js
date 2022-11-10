@@ -7,7 +7,7 @@ const Footer = () => {
                 <img className='w-24 h-24' src='https://img.freepik.com/free-photo/cupcakes_74190-20.jpg?size=626&ext=jpg&ga=GA1.2.1952607280.1664416482&semt=sph' alt='' />
                 <p className='text-2xl font-semibold'>Candle Cake</p>
                 <p>By Fariha Mahjabin</p>
-                <p>Providing reliable tech since 2020</p>
+                <p>Providing service since 2020</p>
                 <p>Copyright © 2022 - All right reserved</p>
             </div>
             <div>
