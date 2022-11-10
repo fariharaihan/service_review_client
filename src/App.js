@@ -1,10 +1,9 @@
 
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
 import router from './Router/Routes/Routes';
 
 function App() {
-
 
   return (
     <div className='max-w-screen-xl mx-auto' >
