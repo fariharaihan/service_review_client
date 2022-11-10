@@ -25,7 +25,7 @@ const Services = () => {
                 }
             </div>
             <div className="card-actions justify-center mt-5">
-                <button className='btn'><Link to='/servicesdetail'>See Our All Products</Link></button>
+                <Link to='/servicesdetail'><button className='btn'>See Our All Products</button></Link>
             </div>
         </div>
     );

@@ -7,18 +7,18 @@ const AddServices = () => {
     const handlePlaceService = event => {
         event.preventDefault();
         const form = event.target;
-        const name = form.name.value;
-        const image = form.image.value;
+        const title = form.title.value;
+        const img = form.img.value;
         const price = form.price.value;
         const rating = form.rating.value;
-        const detail = form.detail.value;
+        const description = form.description.value;
 
         const services = {
             service: _id,
-            title: name,
-            image,
+            title: title,
+            img,
             rating,
-            detail,
+            description,
             price
         }
 
@@ -45,14 +45,14 @@ const AddServices = () => {
             <div>
                 <p></p>
                 <p>
-                    Product/ cake name: <input name='name' type="text" placeholder="Product name" className="input input-bordered w-2/3 mb-3" />
+                    Product/ cake name: <input name='title' type="text" placeholder="Product name" className="input input-bordered w-2/3 mb-3" />
                 </p>
                 <p>
-                    Image: <input name='image' type="text" placeholder="Image" className="input input-bordered w-2/3 mb-3" />
+                    Image: <input name='img' type="text" placeholder="Image" className="input input-bordered w-2/3 mb-3" />
                 </p>
                 <div className='flex align-center'>
                     <p>Cake detail:</p>
-                    <textarea name='detail' className="textarea textarea-bordered mb-3 w-2/3" placeholder="Detail"></textarea>
+                    <textarea name='description' className="textarea textarea-bordered mb-3 w-2/3" placeholder="Detail"></textarea>
 
                 </div>
                 <p>

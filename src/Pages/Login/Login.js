@@ -39,9 +39,9 @@ const Login = () => {
 
     }
     return (
-        <div className="hero w-full">
+        <div className="hero w-full my-10">
             <div className="hero-content  grid md:grid-cols-2 flex-col lg:flex-row">
-                <div className="text-center lg:text-left">
+                <div className="text-center lg:text-left mx-10">
                     <h1 className="text-5xl font-bold">Login now!</h1>
                     <p className="py-6">Please log in our website and place your order & <br />give us your review about our food.</p>
                 </div>
