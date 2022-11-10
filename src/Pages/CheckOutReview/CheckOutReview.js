@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
-import ServicesDetailCard from '../ServicesDetail/ServicesDetail/ServicesDetailCard';
+import { FaUserCircle } from "react-icons/fa";
+
 
 const CheckOutReview = () => {
     const { _id, title, img, price, description, rating } = useLoaderData()
@@ -61,7 +62,7 @@ const CheckOutReview = () => {
                             <img className='w-16 rounded-full dark:bg-gray-500'
                                 src={user?.photoURL
                                 }></img>
-                            : <></>
+                            : <FaUserCircle className='w-12 h-12'></FaUserCircle>
                         }
                     </div>
                     <div className='grid grid-cols-1 w-3/4' >

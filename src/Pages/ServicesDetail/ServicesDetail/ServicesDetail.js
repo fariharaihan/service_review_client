@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../../Shared/ServiceCard/ServiceCard';
 import AllReview from './AllReview';
-import ServicesDetailCard from './ServicesDetailCard';
 
 const ServicesDetail = () => {
     const [services, setServices] = useState([]);
@@ -26,11 +25,12 @@ const ServicesDetail = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <div className="card-actions justify-center mt-5">
 
-            </div>
             <div>
                 <AllReview></AllReview>
+            </div>
+            <div className="card-actions justify-center mt-5">
+                <Link to=''><button className='btn'>Add your review</button></Link>
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
-Website name : Candle Cake
-Link : 
+# Website name : Candle Cake
+# Link : 
 
-Some important informetion about my site (CANDLE CAKE)
+# Some important informetion about my site (CANDLE CAKE)
 
 1. This site is very simple and easy to learn. On the otherhand it is very helpful to them who wants to celebrate their special moment with a beautiful cake.
 
