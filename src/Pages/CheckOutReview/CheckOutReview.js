@@ -24,7 +24,7 @@ const CheckOutReview = () => {
             message
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://b6a11-service-review-server-side-phi.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const CheckOutReview = () => {
     }
 
     return (
-        <div>
+        <div className='mx-5'>
             <div className='py-5 text-center'>
                 <h2 className='text-5xl '>{title}</h2>
                 <div className='text-center my-10'>
@@ -53,7 +53,7 @@ const CheckOutReview = () => {
                 <h4 className='text-3xl font-semibold text-purple-600'>Price: ${price}</h4>
                 <p>rating: {rating}</p>
             </div>
-            <div className='my-10'>
+            <div className='my-10 '>
                 <form onSubmit={handlePlaceReview} >
                     <div className='mb-4'>
                         {user?.photoURL
@@ -65,10 +65,20 @@ const CheckOutReview = () => {
                         }
                     </div>
                     <div className='grid grid-cols-1 w-3/4' >
-                        <input name='name' type="text" placeholder="Name" className="input input-bordered mb-4 " />
-                        <input name='email' type="text" placeholder="email" defaultValue={user?.email} className="input input-bordered mb-4" readOnly />
-                        <input name='rating' type="text" placeholder="rating" className="input input-bordered mb-4" />
-                        <textarea name='message' className="textarea textarea-primary" placeholder="Write your review" required></textarea>
+                        <p className='font-semibold'>
+                            Name:  <input name='name' type="text" placeholder="Name" className="input input-bordered mb-4 w-3/4" />
+                        </p>
+                        <p className='font-semibold'>
+                            Email: <input name='email' type="text" placeholder="email" defaultValue={user?.email} className="input input-bordered mb-4 w-3/4" readOnly />
+                            <p>
+                                rating: <input name='rating' type="text" placeholder="rating" className="input input-bordered mb-4 w-3/4" />
+                            </p>
+                        </p>
+                        <div className='flex align-center font-semibold'>
+                            <p>Your review: </p>
+                            <textarea name='message' className="textarea textarea-primary w-3/4" placeholder="Write your review" required></textarea>
+                            <div className="card-actions justify-end mt-5"></div>
+                        </div>
                         <div className="card-actions justify-end mt-5">
                             <button className='btn'>Place your review</button>
                         </div>

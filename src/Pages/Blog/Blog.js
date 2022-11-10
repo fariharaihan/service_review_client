@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className='my-20'>
-            <div className='border m-4 p-3'>
+            <div className='border border-violet-900 m-4 p-3'>
                 <h2>Question: 1</h2>
                 <h3>What are the Difference between SQL and NoSQL?</h3>
                 <h3>Answer:</h3>
@@ -21,7 +21,7 @@ const Blog = () => {
                     <p>5. SQL databases are not suited for hierarchical data storage but NoSQL databases are best suited for hierarchical data storage.</p>
                 </div>
             </div>
-            <div className='border m-4 p-3'>
+            <div className='border border-violet-900 m-4 p-3'>
                 <h2>Question: 2</h2>
                 <h3>What is JWT, and how does it work?</h3>
                 <h3>Answer:</h3>
@@ -30,7 +30,7 @@ const Blog = () => {
                     JWTs are digitally signed using either a secret (HMAC) or a public/private key pair (RSA or ECDSA) which safeguards them from being modified by the client or an attacker. Stored only on the client: You generate JWTs on the server and send them to the client. The client then submits the JWT with every request
                 </p>
             </div>
-            <div className='border m-4 p-3'>
+            <div className='border border-violet-900 m-4 p-3'>
                 <h2>Question: 3</h2>
                 <h3>What is the difference between javascript and NodeJS?</h3>
                 <h3>Answer:</h3>
@@ -46,7 +46,7 @@ const Blog = () => {
                     <p>5. Javascript is basically used on the client-side and Nodejs is mostly used on the server-side.</p>
                 </div>
             </div>
-            <div className='border m-4 p-3'>
+            <div className='border border-violet-900 m-4 p-3'>
                 <h2>Question: 4</h2>
                 <h3>How does NodeJS handle multiple requests at the same time?</h3>
                 <h3>Answer:</h3>

@@ -22,7 +22,7 @@ const AddServices = () => {
             price
         }
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://b6a11-service-review-server-side-phi.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,22 +43,22 @@ const AddServices = () => {
     return (
         <form onSubmit={handlePlaceService} className="my-20">
             <div>
-                <p></p>
-                <p>
+                <p className='text-4xl mb-7 font-semibold'>You can add your new services...</p>
+                <p className='font-semibold'>
                     Product/ cake name: <input name='title' type="text" placeholder="Product name" className="input input-bordered w-2/3 mb-3" />
                 </p>
-                <p>
+                <p className='font-semibold'>
                     Image: <input name='img' type="text" placeholder="Image" className="input input-bordered w-2/3 mb-3" />
                 </p>
-                <div className='flex align-center'>
+                <div className='flex align-center font-semibold'>
                     <p>Cake detail:</p>
                     <textarea name='description' className="textarea textarea-bordered mb-3 w-2/3" placeholder="Detail"></textarea>
 
                 </div>
-                <p>
+                <p className='font-semibold'>
                     Price: <input name='price' type="text" placeholder="Price" className="input input-bordered w-2/3 mb-3" />
                 </p>
-                <p>
+                <p className='font-semibold'>
                     Rating: <input name='rating' type="text" placeholder="Rating" className="input input-bordered w-2/3 " />
                 </p>
             </div>

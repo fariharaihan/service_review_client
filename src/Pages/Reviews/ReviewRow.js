@@ -6,7 +6,7 @@ const ReviewRow = ({ review, handleDelete, handleUpdate }) => {
     const [reviewService, setReviewService] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/cakeDetails/${service}`)
+        fetch(`https://b6a11-service-review-server-side-phi.vercel.app/cakeDetails/${service}`)
             .then(res => res.json())
             .then(data => setReviewService(data))
             .catch(err => console.error(err))
@@ -50,7 +50,6 @@ const ReviewRow = ({ review, handleDelete, handleUpdate }) => {
                 <div className="modal">
                     <div className="modal-box">
                         <h3 className="font-bold text-lg">You can change your previous review</h3>
-                        {/* <p className="py-4">{message}</p> */}
                         <input type="text" placeholder="Edit your review" className="input input-bordered mb-4 w-full" />
                         <div className="modal-action">
                             <button onClick={() => handleUpdate(_id)} >

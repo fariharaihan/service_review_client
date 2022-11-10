@@ -6,7 +6,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/cakes')
+        fetch('https://b6a11-service-review-server-side-phi.vercel.app/cakes')
             .then(res => res.json())
             .then(data => setServices(data))
     })
@@ -24,7 +24,7 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <div className="card-actions justify-center mt-5">
+            <div className="card-actions justify-center mt-10">
                 <Link to='/servicesdetail'><button className='btn'>See Our All Products</button></Link>
             </div>
         </div>
