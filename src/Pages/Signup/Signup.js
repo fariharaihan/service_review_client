@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
 
 const SignUp = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, loading } = useContext(AuthContext);
+
+    if (loading) {
+        return <div className='flex justify-center'>
+            <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-violet-900"></div>
+        </div>
+    }
 
     const handleSignUp = event => {
         event.preventDefault();

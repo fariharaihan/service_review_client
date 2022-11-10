@@ -7,15 +7,17 @@ const PrivateRoute = ({ children }) => {
     const location = useLocation();
 
     if (loading) {
-        return <h1 className='text-5xl font-semibold'>Loading...</h1>
+        return <div className='flex justify-center'>
+            <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-violet-900"></div>
+        </div>
     }
+
     if (user) {
         return children;
     }
+    return <Navigate to='/login' state={{ from: location }} replace></Navigate>
 
-    return (
-        <Navigate to='/login' state={{ from: location }} replace></Navigate>
-    );
+
 };
 
 export default PrivateRoute;

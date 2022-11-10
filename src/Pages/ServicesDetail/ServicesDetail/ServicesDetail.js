@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import AuthProvider, { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 import ServiceCard from '../../Shared/ServiceCard/ServiceCard';
 import AllReview from './AllReview';
 
 const ServicesDetail = () => {
+    const { loading } = useContext(AuthContext)
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -11,6 +13,12 @@ const ServicesDetail = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     })
+
+    if (loading) {
+        return <div className='flex justify-center'>
+            <div className="w-16 h-16 border-4 rounded-full border-dashed animate-spin border-violet-900"></div>
+        </div>
+    }
 
     return (
         <div className='my-20'>

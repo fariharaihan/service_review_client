@@ -6,9 +6,15 @@ import { FaGoogle } from "react-icons/fa";
 
 
 const Login = () => {
-    const { providerLogin, login } = useContext(AuthContext);
+    const { providerLogin, login, loading } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+    if (loading) {
+        return <div className='flex justify-center'>
+            <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-violet-900"></div>
+        </div>
+    }
 
     const from = location.state?.from?.pathname || '/';
 
